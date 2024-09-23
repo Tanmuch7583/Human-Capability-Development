@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="bg-image"> </div>
+
+    <div class="content">
+
+
+        <img src="./Mandel-Training-Centre.jpeg" alt="logo" height="155px" class="img-fluid back" style="border-radius: 3px;">
+
+            <h1 class="header-align">Course Registration Form</h1>
+            
+            <button onclick="document.getElementById('id01').style.display='block'" class="mx-auto my-4">Register</button>
+            
+            
+
+            
+            <div id="id01" class="modal">
+              
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+                  <div class="container">
+                    <h1>Mandel Training Centre</h1>
+                    <p>Please fill in this form to confirm registration</p>
+                    <hr>
+                    <div class="first-block">
+                      <label for="fname"><b>First Name</b></label><br>
+                    <input type="text" placeholder="Enter your First Name" id="fname" name="fname" required style="float: left;">
+              
+                    <label for="lname"><b>Last Name</b></label><br>
+                    <input type="text" placeholder="Enter your Last Name" id="lname" name="lname" required style="float: right;">
+
+                    </div>
+                    
+                    <label for="employeeNO"><b>Employee Number</b></label><br>
+                    <input type="number" placeholder="Enter your Employee Number" id="employeeNO" name="employeeNO" required>
+            
+                    <label for="jtitle"><b>Job title</b></label><br>
+                    <input type="text" placeholder="Enter your Job Title" id="jtitle" name="jtitle" required>
+                    
+                    <label for="isuperior"><b>Immediate Superior</b></label><br>
+                    <input type="text" placeholder="Enter the name of your immediate superior here" id="isuperior" name="isuperior" required>
+                    
+                    <label for="company"><b>Enter your Parent company here</b></label><br>
+                    <input type="text" placeholder="Enter your Parent company here (E.g Delta Head Office)" id="company" name="company" required>
+                    
+                    <label for="wplace"><b>Enter your working place here</b></label><br>
+                    <input type="text" placeholder="Enter your working place here (E.g Mandel Training Centre)" id="wplace" name="wplace" required>
+
+                    <label for="course">Select your designated Venue for Course here:</label><br>
+                    <select id="course" name="course" class="styled-select">
+                      <option value="GDP- Graduate Development Programe">Mukuyu</option>
+                      <option value="mutondo">Mutondo</option>
+                      <option value="mukute">Mukute</option>
+                      <option value="mupfuti">Mupfuti</option>
+                      <option value="musasa">Musasa</option>
+                      <option value="mupane">Mupane</option>
+                      <option value="mhou">Mhou</option>
+                      <option value="mutamba">Mutamba</option>
+                      <option value="hungwe">Hungwe</option>
+                      <option value="chapungu">Chapungu</option>
+                    </select>
+
+                    <label for="course">Select your designated Course here:</label><br>
+                    <select id="venue" name="venue" class="styled-select">
+                      <option value="EDP">EDP- Executive Development Programe</option>
+                      <option value="MDP">Management Development Programe</option>
+                      <option value="SDP">Supervisory Development Programe</option>
+                      <option value="GDP">Graduate Development Programe</option>
+                      <option value="LSM">LSM</option>
+                      <option value="EDS">EDS</option>
+                      <option value="TLDP">TLDP</option>
+                      <option value="MFR">Managing for results</option>
+                      <option value="ESMM">Effective Supervision & Man Management</option>
+                      <option value="BMA">Brewery Management Academy</option>
+                      <option value="EM">Events Management</option>
+                      <option value="TM">Time Management</option>
+                      <option value="CC">Customer Care</option>
+                      <option value="ESS">Essential Selling Skills</option>
+                      <option value="KAM">Key Account Management</option>
+                      <option value="HRfn-HRM">HR for non-HR Managers</option>
+                      <option value="FFNFM">Finance for non-finance managers</option>
+                      <option value="PS">Presentation Skills</option>
+                      <option value="TB">Team Building</option>
+                      <option value="WCT">Worker's Committee Training</option>
+                      <option value="CoC">Code of Conduct</option>
+                      <option value="EI">Emotional Intelligence</option>
+                      <option value="SM">Stress Management</option>
+                      <option value="SHE-RT">SHE Reps Training</option>
+                      <option value="LF">Leadership Fundamentals</option>
+                      <option value="M">Mentorship</option>
+                      <option value="TIM">Talent Identification and Management</option>
+                      <option value="CM">Change Management</option>
+                      <option value="NS">Negotiation Skills</option>
+                      <option value="PSDM">Problem Solving and Desicion Making</option>
+                      <option value="TTT">Train the trainer</option>
+                      <option value="PB">Personal Branding</option>
+                      <option value="BFHH">Basic Food handling and hygiene</option>
+                      <option value="GAE">Grooming and Etiquette</option>
+                      <option value="">Perfomance Management</option>
+                      <option value="CAP-AT">CAP Assecor Training</option>
+                      <option value="PM">Project Management</option>
+                      <option value="BBA">Basic Business Appreciation</option>
+                      <option value="PA-EMC">PA Excellence Master class</option>
+                      <option value="FOM">Front Office Management</option>
+                      <option value="SEP">Sales Excellence Programe</option>
+                      <option value="ICDL">ICDL</option>
+                      <option value="Excel">Excel</option>
+                      <option value="AE">Advanced Excel</option>
+                      <option value="Powerpoint">Powerpoint</option>
+                      <option value="AP">Advanced Powerpoint</option>
+                    </select>
+
+                    <form>
+                      <label for="duration">Duration of course <br> Starting Date:</label>
+                      <input type="date" id="duration" name="duration">
+    
+                    </form>
+                    <form>
+                      <label for="duration">Ending Date:</label>
+                      <input type="date" id="duration" name="duration">
+    
+                    </form>
+
+
+              
+              
+                   
+
+                  
+              
+                    <div class="text-warning">
+                      Please be sure to have entered the correct registration details
+                    </div>
+              
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signupbtn">Submit</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+        </div>
+    </div>
+
+
+
+
+
+   
+    
+</body>
+</html>
